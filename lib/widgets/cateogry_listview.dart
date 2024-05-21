@@ -19,7 +19,7 @@ class CategoryListView extends StatelessWidget {
     CategoryModel(image: 'assets/images/Table.jpg', name: S.of(context).table),
     CategoryModel(image: 'assets/images/Wardrobe.jpg', name: S.of(context).wardrobe),
   ];
-    return Container(width: double.infinity,
+    return SizedBox(width: double.infinity,
     height: 100,
       child: ListView.builder(padding: EdgeInsets.zero,
       physics:const BouncingScrollPhysics(),

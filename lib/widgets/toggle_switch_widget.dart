@@ -25,7 +25,7 @@ class _ToggleSwitchWidgetState extends State<ToggleSwitchWidget> {
       inactiveFgColor: Colors.white,
       totalSwitches: 2,
       labels: const['En', 'Ar'],
-      activeBgColors: const [[Color(0xffFFB000)],[Color(0xffFFB000)]],
+      activeBgColors: const [[Color(0xff0969A6)],[Color(0xff0969A6)]],
       onToggle: (index) {
     ArApp.of(context).setLocale(index == 0 ? const Locale('en', '') : const Locale('ar', ''));
     

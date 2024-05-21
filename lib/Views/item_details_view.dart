@@ -4,7 +4,6 @@ import 'package:ar_app/main.dart';
 import 'package:ar_app/widgets/elevated_button_widget.dart';
 import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 import 'package:flutter/material.dart';
-import 'package:open_file/open_file.dart';
 import '../generated/l10n.dart';
 import '../widgets/awesome_snackbar.dart';
 import '../widgets/expansion_tile_widget.dart';
@@ -36,7 +35,7 @@ class ItemDetailsView extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 12),
                 child: ElevatedButtonWidget(
                   whatToDo: S.of(context).Show_in_3D ,
-                  onTapAction: () => _openApkFile(context)
+                  onTapAction: () {}
                 ),
               ),
               const Spacer(
@@ -93,10 +92,6 @@ class ItemDetailsView extends StatelessWidget {
       ),
     );
   }
-  void _openApkFile(BuildContext context) async {
-    // Replace 'path_to_apk' with the actual path to your APK file
-    String path = "E:/Graduation Project/ar_app/ArmChair.apk";
-    await OpenFile.open(path);}
   }
 
 

@@ -22,7 +22,7 @@ class _CurvedNavigationBarWidgetState extends State<CurvedNavigationBarWidget> {
     return Scaffold(
         body: pages[currentIndex],
         bottomNavigationBar: CurvedNavigationBar(
-                color: const Color(0xffFFB000),
+                color: const Color(0xff0969A6),
                 backgroundColor: Colors.transparent,
                 height: 50,
                 animationDuration:const Duration(milliseconds: 350),

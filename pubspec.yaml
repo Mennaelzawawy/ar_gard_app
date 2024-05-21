@@ -64,11 +64,11 @@ flutter_native_splash:
   android: true
   # android_gravity: fill
   # color: "#ffffff " 
-  background_image: assets/images/Landing splash.png
-  image: assets/images/A eye_logo.png
+  color: "#f0969A6"
+  image: assets/images/main.png
   android_12:
-    # color: "#ffb000 " 
-    image: assets/images/A eye_logo.png
+    color: "#f0969A6" 
+    image: assets/images/main.png
 
   
 

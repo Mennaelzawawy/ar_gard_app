@@ -13,7 +13,7 @@ class _SwitchButtonWidgetState extends State<SwitchModeButtonWidget> {
   bool isSwitched=false;
   @override
   Widget build(BuildContext context) {
-    return Switch(activeColor: const Color(0xffFFB000),
+    return Switch(activeColor: const Color(0xff0969A6),
       value: isSwitched, onChanged: (value){
 setState(() {
           isSwitched = value;

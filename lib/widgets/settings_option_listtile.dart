@@ -22,7 +22,7 @@ class SettingsOptionsListTile extends StatelessWidget {
           width: 40,
             clipBehavior: Clip.antiAlias,
             decoration:
-                BoxDecoration(borderRadius: BorderRadius.circular(20),color:const Color(0xffFFB000)),
+                BoxDecoration(borderRadius: BorderRadius.circular(20),color:const Color(0xff0969A6)),
           child:  Icon(
             leadingIcon,
             size: 30,

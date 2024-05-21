@@ -18,7 +18,7 @@ class SearchTextFieldWidget extends StatelessWidget {
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(35),
               borderSide: const BorderSide(
-                color: Color(0xffFFB000),
+                color: Color(0xff0969A6),
               )),
           hintText: hint,
           hintMaxLines: 2,
@@ -27,7 +27,7 @@ class SearchTextFieldWidget extends StatelessWidget {
           ),
           suffixIconColor: MaterialStateColor.resolveWith((states) =>
               states.contains(MaterialState.focused)
-                  ? const Color(0xffFFB000)
+                  ? const Color(0xff0969A6)
                   : Colors.grey)),
     );
   }

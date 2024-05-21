@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
               style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 32,
-                      color: isLight(context)? const Color(0xff004225):const Color(0xffFFB000))
+                      color: isLight(context)? const Color(0xffd95525):const Color(0xffd95525))
             ),
           ),
         ),
@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
             child: Text(
               S.of(context).Popular_items_name,
               style: TextStyle(
-                color: isLight(context)? const Color(0xff004225):const Color(0xffFFB000),
+                color: isLight(context)? const Color(0xffd95525):const Color(0xffd95525),
                 fontWeight: FontWeight.bold,
                 fontSize: 35,
               )
