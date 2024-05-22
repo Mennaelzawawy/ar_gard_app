@@ -30,6 +30,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "Description": MessageLookupByLibrary.simpleMessage("Description"),
         "Help": MessageLookupByLibrary.simpleMessage("Help"),
         "Lang": MessageLookupByLibrary.simpleMessage("Language"),
+        "Password": MessageLookupByLibrary.simpleMessage("Password"),
+        "Phone_number": MessageLookupByLibrary.simpleMessage("Phone number"),
         "Popular_items_name":
             MessageLookupByLibrary.simpleMessage("Popular Items"),
         "Price_name": MessageLookupByLibrary.simpleMessage("Price"),
@@ -39,10 +41,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "carpet": MessageLookupByLibrary.simpleMessage("Carprts"),
         "chair": MessageLookupByLibrary.simpleMessage("Chair"),
         "curtain": MessageLookupByLibrary.simpleMessage("Curtain"),
+        "e_mail": MessageLookupByLibrary.simpleMessage("E-Mail"),
+        "full_name": MessageLookupByLibrary.simpleMessage("Full Name"),
         "green_ch": MessageLookupByLibrary.simpleMessage("Green chair"),
         "lighting": MessageLookupByLibrary.simpleMessage("Lighting"),
         "mirror": MessageLookupByLibrary.simpleMessage("Mirror"),
         "orange_ch": MessageLookupByLibrary.simpleMessage("Orange chair"),
+        "save": MessageLookupByLibrary.simpleMessage("Save"),
         "search":
             MessageLookupByLibrary.simpleMessage("Search for inspirations"),
         "success_mes": MessageLookupByLibrary.simpleMessage(

@@ -23,5 +23,10 @@
     "success_mes":"Your item successfully added to the cart!",
     "Damieture":"Damieture",
     "green_ch":"Green chair",
-    "orange_ch":"Orange chair"
+    "orange_ch":"Orange chair",
+    "full_name":"Full Name",
+    "e_mail":"E-Mail",
+    "Phone_number":"Phone number",
+    "Password":"Password",
+    "save":"Save"
 }

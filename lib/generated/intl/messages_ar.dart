@@ -31,6 +31,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "Description": MessageLookupByLibrary.simpleMessage("الوصف"),
         "Help": MessageLookupByLibrary.simpleMessage("المساعدة"),
         "Lang": MessageLookupByLibrary.simpleMessage("اللغة"),
+        "Password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "Phone_number": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
         "Popular_items_name":
             MessageLookupByLibrary.simpleMessage("الأكثر شيوعا"),
         "Price_name": MessageLookupByLibrary.simpleMessage("السعر"),
@@ -40,11 +42,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "carpet": MessageLookupByLibrary.simpleMessage("سجادة"),
         "chair": MessageLookupByLibrary.simpleMessage("كرسي"),
         "curtain": MessageLookupByLibrary.simpleMessage("ستارة"),
+        "e_mail": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
+        "full_name": MessageLookupByLibrary.simpleMessage("الاسم بالكامل"),
         "green_ch": MessageLookupByLibrary.simpleMessage("كرسي باللون الأخضر"),
         "lighting": MessageLookupByLibrary.simpleMessage("وحدة اضاءة"),
         "mirror": MessageLookupByLibrary.simpleMessage("مرايا"),
         "orange_ch":
             MessageLookupByLibrary.simpleMessage("كرسي باللون البرتقالي"),
+        "save": MessageLookupByLibrary.simpleMessage("حفظ"),
         "search": MessageLookupByLibrary.simpleMessage("بحث"),
         "success_mes": MessageLookupByLibrary.simpleMessage(
             "تم اضافة المنتج لعربة التسوق"),

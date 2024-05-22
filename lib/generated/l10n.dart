@@ -299,6 +299,56 @@ class S {
       args: [],
     );
   }
+
+  /// `Full Name`
+  String get full_name {
+    return Intl.message(
+      'Full Name',
+      name: 'full_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `E-Mail`
+  String get e_mail {
+    return Intl.message(
+      'E-Mail',
+      name: 'e_mail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone number`
+  String get Phone_number {
+    return Intl.message(
+      'Phone number',
+      name: 'Phone_number',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get Password {
+    return Intl.message(
+      'Password',
+      name: 'Password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save`
+  String get save {
+    return Intl.message(
+      'Save',
+      name: 'save',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
