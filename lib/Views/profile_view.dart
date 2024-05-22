@@ -48,22 +48,22 @@ class ProfileView extends StatelessWidget {
            ProfileTextFieldWidget(
             hintName: S.of(context).full_name,
             prefixIcon: Icons.person,
-            labelName: S.of(context).full_name,
+            labelName: S.of(context).full_name, obsecuredText: false,
           ),
            ProfileTextFieldWidget(
             hintName: S.of(context).e_mail,
             prefixIcon: Icons.email,
-            labelName: S.of(context).e_mail,
+            labelName: S.of(context).e_mail, obsecuredText: false,
           ),
            ProfileTextFieldWidget(
             hintName: S.of(context).Phone_number,
             prefixIcon: Icons.phone,
-            labelName: S.of(context).Phone_number,
+            labelName: S.of(context).Phone_number, obsecuredText: false,
           ),
            ProfileTextFieldWidget(
             hintName: S.of(context).Password,
             prefixIcon: Icons.password,
-            labelName: S.of(context).Password,
+            labelName: S.of(context).Password, obsecuredText: true,
           ),
           Padding(
             padding: const EdgeInsets.only(top: 10,left:60,right: 60 ),
