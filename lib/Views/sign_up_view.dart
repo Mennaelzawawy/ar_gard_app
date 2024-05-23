@@ -35,10 +35,19 @@ class _LoginPageState extends State<SignUpPage> {
                   fontWeight: FontWeight.bold,
                   fontSize: 40),
             )),
+             const Positioned(
+            right: -120,
+            bottom: -380,
+            left: 150,
+            top: 420,
+            child: GradientCircleWidget(
+              heightNum: 600,
+              widthtNum: 900,
+            )),
         ListView(
           children: [
             const SizedBox(
-              height: 270,
+              height: 250,
             ),
             ProfileTextFieldWidget(
               hintName: S.of(context).full_name,
@@ -51,6 +60,12 @@ class _LoginPageState extends State<SignUpPage> {
               prefixIcon: Icons.email,
               labelName: S.of(context).e_mail,
               obsecuredText: false,
+            ),
+            ProfileTextFieldWidget(
+              hintName: S.of(context).address,
+              prefixIcon: Icons.home,
+              labelName: S.of(context).address,
+              obsecuredText: true,
             ),
             ProfileTextFieldWidget(
               hintName: S.of(context).Password,
@@ -84,15 +99,7 @@ class _LoginPageState extends State<SignUpPage> {
             )
           ],
         ),
-        const Positioned(
-            right: -120,
-            bottom: -380,
-            left: 150,
-            top: 420,
-            child: GradientCircleWidget(
-              heightNum: 600,
-              widthtNum: 900,
-            )),
+       
       ]),
     );
   }

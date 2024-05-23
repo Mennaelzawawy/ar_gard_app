@@ -38,6 +38,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "Price_name": MessageLookupByLibrary.simpleMessage("السعر"),
         "Seller": MessageLookupByLibrary.simpleMessage("البائع"),
         "Show_in_3D": MessageLookupByLibrary.simpleMessage("عرض ثلاثي الأبعاد"),
+        "address": MessageLookupByLibrary.simpleMessage("العنوان"),
         "bed": MessageLookupByLibrary.simpleMessage("سرير"),
         "carpet": MessageLookupByLibrary.simpleMessage("سجادة"),
         "chair": MessageLookupByLibrary.simpleMessage("كرسي"),
