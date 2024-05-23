@@ -37,6 +37,15 @@ class _LoginPageState extends State<LoginPage> {
                     fontWeight: FontWeight.bold,
                     fontSize: 40),
               )),
+               const Positioned(
+              right: -120,
+              bottom: -380,
+              left: 150,
+              top: 420,
+              child: GradientCircleWidget(
+                heightNum:600,
+                widthtNum: 900,
+              )),
           ListView(
             children: [
               const SizedBox(
@@ -82,15 +91,7 @@ class _LoginPageState extends State<LoginPage> {
               )
             ],
           ),
-          const Positioned(
-              right: -120,
-              bottom: -380,
-              left: 150,
-              top: 420,
-              child: GradientCircleWidget(
-                heightNum:600,
-                widthtNum: 900,
-              )),
+         
         ],
       ),
     );
