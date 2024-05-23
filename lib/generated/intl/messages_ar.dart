@@ -46,11 +46,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "full_name": MessageLookupByLibrary.simpleMessage("الاسم بالكامل"),
         "green_ch": MessageLookupByLibrary.simpleMessage("كرسي باللون الأخضر"),
         "lighting": MessageLookupByLibrary.simpleMessage("وحدة اضاءة"),
+        "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "mirror": MessageLookupByLibrary.simpleMessage("مرايا"),
         "orange_ch":
             MessageLookupByLibrary.simpleMessage("كرسي باللون البرتقالي"),
         "save": MessageLookupByLibrary.simpleMessage("حفظ"),
         "search": MessageLookupByLibrary.simpleMessage("بحث"),
+        "signup": MessageLookupByLibrary.simpleMessage("انشاء حساب"),
         "success_mes": MessageLookupByLibrary.simpleMessage(
             "تم اضافة المنتج لعربة التسوق"),
         "success_tit": MessageLookupByLibrary.simpleMessage("تم"),

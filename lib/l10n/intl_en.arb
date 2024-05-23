@@ -28,5 +28,7 @@
     "e_mail":"E-Mail",
     "Phone_number":"Phone number",
     "Password":"Password",
-    "save":"Save"
+    "save":"Save",
+    "login":"Log in",
+    "signup":"Sign up"
 }

@@ -45,11 +45,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "full_name": MessageLookupByLibrary.simpleMessage("Full Name"),
         "green_ch": MessageLookupByLibrary.simpleMessage("Green chair"),
         "lighting": MessageLookupByLibrary.simpleMessage("Lighting"),
+        "login": MessageLookupByLibrary.simpleMessage("Log in"),
         "mirror": MessageLookupByLibrary.simpleMessage("Mirror"),
         "orange_ch": MessageLookupByLibrary.simpleMessage("Orange chair"),
         "save": MessageLookupByLibrary.simpleMessage("Save"),
         "search":
             MessageLookupByLibrary.simpleMessage("Search for inspirations"),
+        "signup": MessageLookupByLibrary.simpleMessage("Sign up"),
         "success_mes": MessageLookupByLibrary.simpleMessage(
             "Your item successfully added to the cart!"),
         "success_tit": MessageLookupByLibrary.simpleMessage("Done!"),
