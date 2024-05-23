@@ -1,7 +1,7 @@
 import 'package:ar_app/Views/sign_up_view.dart';
 import 'package:ar_app/generated/l10n.dart';
 import 'package:ar_app/widgets/elevated_button_widget.dart';
-import 'package:ar_app/widgets/gradients.dart';
+import 'package:ar_app/widgets/circle_gradient.dart';
 import 'package:ar_app/widgets/profile_textfield.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
                 widthtNum: 650,
               )),
           const Positioned(
-              right: 200,
+              right: 150,
               top: 90,
               child: Text(
                 "Login",
@@ -61,17 +61,23 @@ class _LoginPageState extends State<LoginPage> {
                     size: 18,
                     onTapAction: () {}),
               ),
-              const Text(
-                "Don't have an account? ",
-                style: TextStyle(color: Color(0xff0969A6)),
+              const Padding(
+                padding: EdgeInsets.only(left: 5),
+                child: Text(
+                  "Don't have an account? ",
+                  style: TextStyle(color: Color(0xff0969A6)),
+                ),
               ),
               GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, SignUpPage.id);
                 },
-                child: const Text(
-                  "Sign up",
-                  style: TextStyle(color: Color(0xff0969A6)),
+                child: const Padding(
+                  padding: EdgeInsets.only(left:5 ),
+                  child: Text(
+                    "Sign up",
+                    style: TextStyle(color: Color(0xff0969A6)),
+                  ),
                 ),
               )
             ],
