@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 
 class CurvedNavigationBarWidget extends StatefulWidget {
   const CurvedNavigationBarWidget({super.key});
+  static String id = "curvedNavigationBar";
 
   @override
   State<CurvedNavigationBarWidget> createState() =>

@@ -1,6 +1,6 @@
-import 'package:ar_app/Views/home_view.dart';
 import 'package:ar_app/Views/login_view.dart';
 import 'package:ar_app/Views/sign_up_view.dart';
+import 'package:ar_app/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'generated/l10n.dart';
@@ -46,7 +46,7 @@ class _ArAppState extends State<ArApp> {
       routes: {
         LoginPage.id: (context) => const LoginPage(),
         SignUpPage.id: (context) => const SignUpPage(),
-        HomePage.id:(context) => const HomePage(),
+        CurvedNavigationBarWidget.id:(context) => const CurvedNavigationBarWidget(),
       },
       locale: _locale,
       localizationsDelegates: const [

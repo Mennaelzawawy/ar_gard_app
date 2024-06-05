@@ -1,4 +1,4 @@
-import 'package:ar_app/Views/home_view.dart';
+import 'package:ar_app/curved_navigation_bar.dart';
 import 'package:ar_app/generated/l10n.dart';
 import 'package:ar_app/widgets/elevated_button_widget.dart';
 import 'package:ar_app/widgets/circle_gradient.dart';
@@ -78,7 +78,7 @@ class _LoginPageState extends State<SignUpPage> {
               padding: const EdgeInsets.only(top: 10, left: 60, right: 60),
               child: ElevatedButtonWidget(
                   whatToDo: S.of(context).signup, size: 18, onTapAction: () {
-                    Navigator.pushNamed(context, HomePage.id);
+                    Navigator.pushNamed(context, CurvedNavigationBarWidget.id);
                   }),
             ),
             const Padding(
