@@ -7,6 +7,7 @@ import '../sliver_quilted_gridview_of_home.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
+  static String id = "homePage";
 
   @override
   Widget build(BuildContext context) {

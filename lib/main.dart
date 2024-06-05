@@ -1,3 +1,4 @@
+import 'package:ar_app/Views/home_view.dart';
 import 'package:ar_app/Views/login_view.dart';
 import 'package:ar_app/Views/sign_up_view.dart';
 import 'package:flutter/material.dart';
@@ -44,7 +45,8 @@ class _ArAppState extends State<ArApp> {
     return MaterialApp(
       routes: {
         LoginPage.id: (context) => const LoginPage(),
-        SignUpPage.id: (context) => const SignUpPage()
+        SignUpPage.id: (context) => const SignUpPage(),
+        HomePage.id:(context) => const HomePage(),
       },
       locale: _locale,
       localizationsDelegates: const [

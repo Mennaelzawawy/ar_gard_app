@@ -1,3 +1,4 @@
+import 'package:ar_app/Views/home_view.dart';
 import 'package:ar_app/Views/sign_up_view.dart';
 import 'package:ar_app/generated/l10n.dart';
 import 'package:ar_app/widgets/elevated_button_widget.dart';
@@ -8,6 +9,7 @@ import 'package:flutter/material.dart';
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
   static String id = "loginPage";
+
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -68,7 +70,9 @@ class _LoginPageState extends State<LoginPage> {
                 child: ElevatedButtonWidget(
                     whatToDo: S.of(context).login,
                     size: 18,
-                    onTapAction: () {}),
+                    onTapAction: () {
+                       Navigator.pushNamed(context, HomePage.id);
+                    }),
               ),
               const Padding(
                 padding: EdgeInsets.only(left: 5),
