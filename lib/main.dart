@@ -2,6 +2,7 @@ import 'package:ar_app/Views/login_view.dart';
 import 'package:ar_app/Views/sign_up_view.dart';
 import 'package:ar_app/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'generated/l10n.dart';
 
@@ -17,6 +18,9 @@ class ArApp extends StatefulWidget {
   static _ArAppState of(BuildContext context) =>
       context.findAncestorStateOfType<_ArAppState>()!;
 }
+// In your Flutter project (e.g., main.dart)
+const MethodChannel _channel = MethodChannel('ar_flutter_channel');
+
 
 void setLocale(BuildContext context, Locale newLocale) {
   _ArAppState? state = context.findAncestorStateOfType<_ArAppState>();

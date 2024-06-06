@@ -5,6 +5,7 @@ class ItemModel{
   final String seller;
   final num price;
   final String description;
-  ItemModel({required  this.name,required  this.image,required this.seller,required this.description,required this.price, });
+  final num? id;
+  ItemModel( {required  this.name,required  this.image,required this.seller,required this.description,required this.price,this.id, });
 
 }
