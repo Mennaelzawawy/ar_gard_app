@@ -1,5 +1,4 @@
 import 'package:ar_app/Models/item_model.dart';
-import 'package:ar_app/like_button.dart';
 import 'package:ar_app/main.dart';
 import 'package:ar_app/widgets/elevated_button_widget.dart';
 import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
@@ -52,10 +51,10 @@ class ItemDetailsView extends StatelessWidget {
               const Spacer(
                 flex: 1,
               ),
-              const Padding(
-                padding: EdgeInsets.all(10),
-                child: LikeButtonWidget(),
-              ),
+              // const Padding(
+              //   padding: EdgeInsets.all(10),
+              //   child: LikeButtonWidget(),
+              // ),
             ],
           ),
 

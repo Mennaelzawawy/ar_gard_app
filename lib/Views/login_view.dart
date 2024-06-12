@@ -16,6 +16,9 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  //  String _email = "";
+  //  String _password = "";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,9 +73,10 @@ class _LoginPageState extends State<LoginPage> {
                 child: ElevatedButtonWidget(
                     whatToDo: S.of(context).login,
                     size: 18,
-                    onTapAction: () {
-                       Navigator.pushNamed(context, CurvedNavigationBarWidget.id);
-                    }),
+                    onTapAction: ()  {
+                   
+                      Navigator.pushNamed(context, CurvedNavigationBarWidget.id);
+  }),
               ),
               const Padding(
                 padding: EdgeInsets.only(left: 5),
@@ -101,3 +105,5 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
+    // bool validateCredentials(String email, String password) {
+    // return email == "menna@gmail.com" && password == "123456";}

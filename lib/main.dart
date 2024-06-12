@@ -24,7 +24,7 @@ const MethodChannel _channel = MethodChannel('ar_flutter_channel');
 
 void setLocale(BuildContext context, Locale newLocale) {
   _ArAppState? state = context.findAncestorStateOfType<_ArAppState>();
-  state?.setLocale(newLocale);
+  state!.setLocale(newLocale);
   {}
 }
 
