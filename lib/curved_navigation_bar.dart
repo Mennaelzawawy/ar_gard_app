@@ -16,7 +16,7 @@ class CurvedNavigationBarWidget extends StatefulWidget {
 
 class _CurvedNavigationBarWidgetState extends State<CurvedNavigationBarWidget> {
   int currentIndex = 0;
-  List<Widget> pages = const [HomePage(), SearchView(), CartView(),SettingsView()];
+  List<Widget> pages =  [const HomePage(), SearchView(), CartView(),SettingsView()];
 
   @override
   Widget build(BuildContext context) {

@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 
 class ProfileTextFieldWidget extends StatefulWidget {
   const ProfileTextFieldWidget(
-      {super.key, required this.hintName, required this.prefixIcon, required this.labelName, required this.obsecuredText});
+      {super.key, required this.hintName, required this.prefixIcon, required this.labelName, required this.obsecuredText, this.fieldController,});
   final String hintName;
   final String labelName;
   final IconData prefixIcon;
   final bool obsecuredText;
+  final TextEditingController? fieldController;
 
   @override
   State<ProfileTextFieldWidget> createState() => _ProfileTextFieldWidgetState();
@@ -18,6 +19,7 @@ class _ProfileTextFieldWidgetState extends State<ProfileTextFieldWidget> {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: TextField(
+        controller: widget.fieldController,
         obscureText:widget.obsecuredText ,
         decoration: InputDecoration(
           labelText: widget.labelName,

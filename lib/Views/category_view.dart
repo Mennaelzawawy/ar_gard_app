@@ -33,7 +33,7 @@ class CategoryView extends StatelessWidget {
         builder: (context, snapshot) {
             return CustomScrollView(
               slivers: [
-                SliverQuiltedGrid(items: snapshot.data!),
+                SliverQuiltedGridWidget(items: snapshot.data!),
               ],
             );
           

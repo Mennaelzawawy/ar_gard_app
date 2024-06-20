@@ -5,15 +5,18 @@ class SearchTextFieldWidget extends StatelessWidget {
     super.key,
     required this.hint,
     required this.icon,
+    required this.onChanged,
   });
   final String hint;
   final IconData icon;
+  final void Function(String) onChanged;
+
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      onChanged: onChanged,
       decoration: InputDecoration(
-        
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(35)),
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(35),

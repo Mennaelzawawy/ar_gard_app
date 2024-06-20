@@ -1,9 +1,9 @@
-import 'package:ar_app/Models/item_model.dart';
+import 'package:ar_app/Views/all_products_view.dart';
 import 'package:ar_app/main.dart';
 import 'package:ar_app/widgets/cateogry_listview.dart';
 import 'package:flutter/material.dart';
 import '../generated/l10n.dart';
-import '../sliver_quilted_gridview_of_home.dart';
+
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ),
-         SliverQuiltedGrid()
+         const AllProductsView()
       ],
     ));
   }

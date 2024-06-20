@@ -33,7 +33,8 @@ class ItemWidget extends StatelessWidget {
                   children: [
                     Expanded(
                       child: Image(
-                        image: NetworkImage(item.image??'https://th.bing.com/th?id=OIP.O21FnzurtYJ_6DjQr1Q2QgHaJ5&w=216&h=289&c=8&rs=1&qlt=90&o=6&dpr=1.8&pid=3.1&rm=2'),
+                        image: NetworkImage(item.image.contains('https://a-eye-fj81.onrender.com')?item.image:'https://a-eye-fj81.onrender.com${item.image}',),
+                          // item.image??'https://th.bing.com/th?id=OIP.O21FnzurtYJ_6DjQr1Q2QgHaJ5&w=216&h=289&c=8&rs=1&qlt=90&o=6&dpr=1.8&pid=3.1&rm=2'),),
                         fit: BoxFit.fill,
                       ),
                     ),
