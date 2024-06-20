@@ -3,14 +3,13 @@ import 'package:ar_app/main.dart';
 import 'package:ar_app/widgets/elevated_button_widget.dart';
 import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../generated/l10n.dart';
 import '../widgets/awesome_snackbar.dart';
 import '../widgets/expansion_tile_widget.dart';
 
 class ItemDetailsView extends StatelessWidget {
-  const ItemDetailsView({super.key, required this.item});
-  final ItemModel item;
+   ItemDetailsView({super.key, required this.item});
+    ItemModel item;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +24,7 @@ class ItemDetailsView extends StatelessWidget {
       body: ListView(
         physics: const BouncingScrollPhysics(),
         children: [
-          Image.asset(item.image),
+          Image.network(item.image),
           const Divider(
             thickness: 1,
             height: 0,
@@ -36,17 +35,7 @@ class ItemDetailsView extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 12),
                 child: ElevatedButtonWidget(
                     whatToDo: S.of(context).Show_in_3D,
-                    onTapAction: () async {
-                      final channel = MethodChannel('ar_flutter_channel');
-                      try {
-                        final result = await channel.invokeMethod('showItem',
-                            {'itemId': 6}); // Replace with your data
-                        print(
-                            result); // Handle any response from Unity (optional)
-                      } on PlatformException catch (error) {
-                        print(error.message); // Handle errors
-                      }
-                    }),
+                    onTapAction: () {}),
               ),
               const Spacer(
                 flex: 1,
@@ -61,11 +50,11 @@ class ItemDetailsView extends StatelessWidget {
           // Text("Description:",style: TextStyle(fontWeight: FontWeight.bold),),
           // Text(item.description),
           ExpansionTileWidget(
-            item: item.description,
+            item: item.description??"mm",
             name: S.of(context).Description,
           ),
           ExpansionTileWidget(
-            item: item.seller,
+            item: item.seller??"mmk",
             name: S.of(context).Seller,
           ),
           ExpansionTileWidget(

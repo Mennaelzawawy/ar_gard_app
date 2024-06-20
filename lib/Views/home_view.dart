@@ -27,15 +27,15 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ),
-        // const SliverToBoxAdapter(
-        //     child: SizedBox(
-        //   height: 40,
-        // )),
+        const SliverToBoxAdapter(
+            child: SizedBox(
+          height: 40,
+        )),
         const SliverToBoxAdapter(child: CategoryListView()),
-        // const SliverToBoxAdapter(
-        //     child: SizedBox(
-        //   height: 10,
-        // )),
+        const SliverToBoxAdapter(
+            child: SizedBox(
+          height: 10,
+        )),
         SliverToBoxAdapter(
           child: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -49,74 +49,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ),
-        SliverQuiltedGrid(items: [
-          ItemModel(
-              image: 'assets/images/1.jpg',
-              seller: S.of(context).Damieture,
-              description: S.of(context).green_ch,
-              price: 500,
-              name: S.of(context).chair,
-              id: 1),
-          ItemModel(
-              image: 'assets/images/2.jpg',
-              seller: S.of(context).Damieture,
-              description: S.of(context).orange_ch,
-              price: 2000,
-              name: S.of(context).chair,
-              id: 2),
-          ItemModel(
-              image: 'assets/images/3.jpg',
-              seller: 'Damieture',
-              description: 'Beige chair',
-              price: 600,
-              name: S.of(context).chair,
-              id: 3),
-          ItemModel(
-              image: 'assets/images/4.jpg',
-              seller: 'Damieture',
-              description: 'Wooden bed',
-              price: 700,
-              name: S.of(context).bed,
-              id: 4),
-          ItemModel(
-              image: 'assets/images/5.jpg',
-              seller: 'Damieture',
-              description: 'Pink bed',
-              price: 800,
-              name: S.of(context).bed,
-              id: 5),
-          ItemModel(
-              image: 'assets/images/6.jpg',
-              seller: 'Damieture',
-              description: 'Grey bed',
-              price: 900,
-              name: S.of(context).bed,
-              id: 6),
-          ItemModel(
-              image: 'assets/images/7.jpg',
-              seller: 'Damieture',
-              description: 'Beige ligthing unit',
-              price: 1000,
-              name: S.of(context).lighting),
-          ItemModel(
-              image: 'assets/images/8.jpg',
-              seller: 'Damieture',
-              description: 'Black ligthing unit',
-              price: 1100,
-              name: S.of(context).lighting),
-          ItemModel(
-              image: 'assets/images/9.jpg',
-              seller: 'Damieture',
-              description: 'White ligthing unit',
-              price: 1200,
-              name: S.of(context).lighting),
-          ItemModel(
-              image: 'assets/images/10.jpg',
-              seller: 'Damieture',
-              description: 'Wooden table with 4 chairs',
-              price: 1300,
-              name: S.of(context).table),
-        ]),
+         SliverQuiltedGrid()
       ],
     ));
   }

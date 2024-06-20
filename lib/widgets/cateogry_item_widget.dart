@@ -1,10 +1,10 @@
-import 'package:ar_app/Models/category_item.dart';
+import 'package:ar_app/Models/category_model.dart';
 import 'package:ar_app/Views/category_view.dart';
 import 'package:flutter/material.dart';
 
 class CategoryItemWidget extends StatelessWidget {
-  const CategoryItemWidget({super.key, required this.categoryItem});
-  final CategoryModel categoryItem;
+   CategoryItemWidget({super.key, required this.categoryItem});
+   CategoryModel categoryItem;
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class CategoryItemWidget extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.all(5),
-          child: GestureDetector( onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) =>const CategoryView(),),
+          child: GestureDetector( onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => CategoryView(categoryItem: categoryItem,),),
       ),
       child: CircleAvatar(
         radius: 31,
@@ -21,10 +21,10 @@ class CategoryItemWidget extends StatelessWidget {
         child: CircleAvatar(radius: 29,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(25),
-            child: Image.asset(
-                      categoryItem.image,
-                      fit: BoxFit.fill,
-                      ),
+            child: Image.network(categoryItem.image,fit: BoxFit.fill,),
+                      
+                      
+                    
           )),
       ),
             // child: Container(

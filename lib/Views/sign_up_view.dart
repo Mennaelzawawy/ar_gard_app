@@ -3,7 +3,6 @@ import 'package:ar_app/generated/l10n.dart';
 import 'package:ar_app/widgets/elevated_button_widget.dart';
 import 'package:ar_app/widgets/circle_gradient.dart';
 import 'package:ar_app/widgets/profile_textfield.dart';
-import 'package:ar_app/widgets/radio_button_widget.dart';
 import 'package:flutter/material.dart';
 
 class SignUpPage extends StatefulWidget {

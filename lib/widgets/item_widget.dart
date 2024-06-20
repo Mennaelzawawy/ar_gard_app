@@ -3,14 +3,16 @@ import 'package:ar_app/Views/item_details_view.dart';
 import 'package:flutter/material.dart';
 
 class ItemWidget extends StatelessWidget {
-  const ItemWidget({super.key, required this.item});
-  final ItemModel item;
+   ItemWidget({super.key, required this.item});
+    ItemModel item;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => ItemDetailsView(item: item,),),
-      ),
+      onTap: () {
+        Navigator.of(context).push(MaterialPageRoute(builder: (context) => ItemDetailsView(item: item,)));
+      }
+      ,
       child: Padding(
         padding: const EdgeInsets.all(3),
         child: Container(
@@ -31,7 +33,7 @@ class ItemWidget extends StatelessWidget {
                   children: [
                     Expanded(
                       child: Image(
-                        image: AssetImage(item.image),
+                        image: NetworkImage(item.image??'https://th.bing.com/th?id=OIP.O21FnzurtYJ_6DjQr1Q2QgHaJ5&w=216&h=289&c=8&rs=1&qlt=90&o=6&dpr=1.8&pid=3.1&rm=2'),
                         fit: BoxFit.fill,
                       ),
                     ),

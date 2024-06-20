@@ -73,10 +73,10 @@ class _LoginPageState extends State<LoginPage> {
                 child: ElevatedButtonWidget(
                     whatToDo: S.of(context).login,
                     size: 18,
-                    onTapAction: ()  {
-                   
+                    onTapAction: () {
                       Navigator.pushNamed(context, CurvedNavigationBarWidget.id);
-  }),
+                    }
+                    ),
               ),
               const Padding(
                 padding: EdgeInsets.only(left: 5),
