@@ -1,12 +1,13 @@
-import 'package:ar_app/services/login.dart';
+import 'package:ar_app/services/save_token.dart';
 import 'package:flutter/material.dart';
+import 'package:ar_app/services/login.dart';
 import 'package:ar_app/generated/l10n.dart';
 import 'package:ar_app/widgets/elevated_button_widget.dart';
 import 'package:ar_app/widgets/circle_gradient.dart';
 import 'package:ar_app/widgets/profile_textfield.dart';
 import 'package:ar_app/curved_navigation_bar.dart';
 import 'package:ar_app/Views/sign_up_view.dart';
-
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -20,6 +21,7 @@ class _LoginPageState extends State<LoginPage> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final LoginUser _loginUser = LoginUser();
+  final storage = FlutterSecureStorage();
 
   Future<void> _login() async {
     final String email = _emailController.text;
@@ -27,6 +29,8 @@ class _LoginPageState extends State<LoginPage> {
 
     try {
       final loginModel = await _loginUser.addLoginInfo(email: email, password: password);
+      // Save the token
+      await saveToken(loginModel.token);
       // Navigate to the next screen if login is successful
       Navigator.pushNamed(context, CurvedNavigationBarWidget.id);
     } catch (error) {

@@ -1,7 +1,9 @@
 // import 'package:ar_app/Models/item_model.dart';
 // import 'package:ar_app/generated/l10n.dart';
+import 'package:ar_app/Views/check_out_view.dart';
 import 'package:ar_app/widgets/cart_card_listview.dart';
 import 'package:ar_app/widgets/elevated_button_widget.dart';
+import 'package:checkout_screen_ui/checkout_ui.dart';
 import 'package:flutter/material.dart';
 
 class CartView extends StatelessWidget {
@@ -17,7 +19,9 @@ class CartView extends StatelessWidget {
           ),
              Padding(
                padding: const EdgeInsets.only(bottom: 20),
-               child: SizedBox(width: 250,height: 50,child: ElevatedButtonWidget(whatToDo:"complete purchase", onTapAction: (){})),
+               child: SizedBox(width: 250,height: 50,child: ElevatedButtonWidget(whatToDo:"complete purchase", onTapAction: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) =>  CheckOutView()));
+               })),
              )]
         );
   }
