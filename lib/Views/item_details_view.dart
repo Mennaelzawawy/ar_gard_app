@@ -1,5 +1,6 @@
 import 'package:ar_app/Models/item_model.dart';
 import 'package:ar_app/main.dart';
+import 'package:model_viewer_plus/model_viewer_plus.dart';
 import 'package:ar_app/widgets/elevated_button_widget.dart';
 import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 import 'package:flutter/material.dart';
@@ -35,7 +36,15 @@ class ItemDetailsView extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 12),
                 child: ElevatedButtonWidget(
                     whatToDo: S.of(context).Show_in_3D,
-                    onTapAction: () {}),
+                    onTapAction: () {
+                     return ModelViewer(
+          src: 'assets/models/chair.glb',
+          ar: true,
+          arPlacement: ArPlacement.floor,
+          autoRotate: true,
+          cameraControls: true,
+        );
+                    }),
               ),
               const Spacer(
                 flex: 1,

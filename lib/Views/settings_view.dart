@@ -31,7 +31,7 @@ class _SettingsViewState extends State<SettingsView> {
                 radius: 65,
               ),
               const SizedBox(height: 10,),
-              const Text("Ali",style: TextStyle(fontSize: 18),),
+              const Text("Menna",style: TextStyle(fontSize: 18),),
               const SizedBox(height: 20,),
               GestureDetector(
                  

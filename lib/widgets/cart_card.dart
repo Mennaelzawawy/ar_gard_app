@@ -19,7 +19,7 @@ class CartCardWidget extends StatelessWidget {
           elevation: 3,
           child: ListTile(
             leading: Image.asset(cartItem.image),
-            title: Text(cartItem.description),
+            title: Text(cartItem.name),
             subtitle: Text(
               cartItem.price.toString(),
               style: const TextStyle(color: Colors.green),

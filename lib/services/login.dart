@@ -1,4 +1,5 @@
 import 'package:ar_app/Models/login_info.dart';
+import 'package:ar_app/services/save_token.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -18,12 +19,14 @@ class LoginUser {
       }),
     );
 
-    if (response.statusCode == 200) {
-      final Map<String, dynamic> data = jsonDecode(response.body);
-      return LoginModel.fromJson(data);
-    } else {
-      throw Exception('Failed to login');
-    }
+   if (response.statusCode == 200) {
+    final Map<String, dynamic> data = jsonDecode(response.body);
+    final LoginModel loginModel = LoginModel.fromJson(data);
+    await saveToken(loginModel.token); // Save the token
+    return loginModel;
+  } else {
+    throw Exception('Failed to login');
+  }
   }
 }
 

@@ -31,11 +31,15 @@ class CategoryView extends StatelessWidget {
       body: FutureBuilder<List<ItemModel>>(
         future: CategoriesServices().getCategoriesProducts(category_id: categoryItem.id),
         builder: (context, snapshot) {
-            return CustomScrollView(
+            if(snapshot.hasData){
+              return CustomScrollView(
               slivers: [
                 SliverQuiltedGridWidget(items: snapshot.data!),
               ],
             );
+            }else{
+              return Center(child: const CircularProgressIndicator());
+            }
           
         }
       ),

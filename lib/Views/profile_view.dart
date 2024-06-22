@@ -1,7 +1,17 @@
+import 'dart:convert';
+
+import 'package:ar_app/services/save_token.dart';
 import 'package:ar_app/widgets/elevated_button_widget.dart';
+// import 'package:ar_app/widgets/elevated_button_widget.dart';
 import 'package:ar_app/widgets/profile_textfield.dart';
+import 'package:checkout_screen_ui/checkout_ui.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 import '../generated/l10n.dart';
+
+
+
+
 
 class ProfileView extends StatelessWidget {
   const ProfileView({super.key});
@@ -48,22 +58,22 @@ class ProfileView extends StatelessWidget {
            ProfileTextFieldWidget(
             hintName: S.of(context).full_name,
             prefixIcon: Icons.person,
-            labelName: S.of(context).full_name, obsecuredText: false,
+            labelName: 'menna', obsecuredText: false,
           ),
            ProfileTextFieldWidget(
             hintName: S.of(context).e_mail,
             prefixIcon: Icons.email,
-            labelName: S.of(context).e_mail, obsecuredText: false,
+            labelName: 'menna@gmail.com', obsecuredText: false,
           ),
            ProfileTextFieldWidget(
             hintName: S.of(context).Phone_number,
             prefixIcon: Icons.phone,
-            labelName: S.of(context).Phone_number, obsecuredText: false,
+            labelName: '01024176346', obsecuredText: false,
           ),
            ProfileTextFieldWidget(
             hintName: S.of(context).Password,
             prefixIcon: Icons.password,
-            labelName: S.of(context).Password, obsecuredText: true,
+            labelName: '12345', obsecuredText: true,
           ),
           Padding(
             padding: const EdgeInsets.only(top: 10,left:60,right: 60 ),
